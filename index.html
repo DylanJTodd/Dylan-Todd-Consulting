@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Independent consulting for energy, EV charging, and compliance — Canada-focused."
+      content="Dylan Todd: full stack and AI/ML engineer for hire. Builds software and data pipelines; energy and CFR as shipping contexts. Portfolio linked."
     />
     <title>Dylan Todd Consulting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,7 +26,9 @@
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#expertise">Expertise</a>
+          <a href="#testimonials">Clients</a>
           <a href="#contact">Contact</a>
+          <a id="nav-portfolio" href="https://dylanjtodd.github.io/site/index.html">Portfolio</a>
           <a id="nav-linkedin" href="#" style="display: none">LinkedIn</a>
           <a id="nav-other" href="#" style="display: none">Link</a>
           <a class="nav-cta" href="#book">Book a call</a>
@@ -35,210 +37,313 @@
     </header>
 
     <main id="main">
-      <section class="hero" aria-labelledby="hero-heading">
-        <p class="section-label">Independent consulting</p>
-        <h1 id="hero-heading"><span id="legal-name">Dylan Todd</span></h1>
-        <p class="lede" id="tagline">
-          [One line: what you do and who you help — e.g. Independent advisory for energy, EV charging, and
-          compliance in Canada.]
-        </p>
-        <p class="prose" id="hero-subtext">
-          [Short supporting line — e.g. Strategy, regulatory navigation, and project delivery for operators
-          and investors.]
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#book">Schedule an intro call</a>
-          <a class="btn btn-secondary" href="#contact">Send a message</a>
+      <section class="section-shell section-shell--warm" aria-labelledby="hero-heading">
+        <div class="section-inner">
+          <div class="hero hero-grid">
+            <div>
+              <p class="section-label">Contract software engineering</p>
+              <h1 id="hero-heading"><span id="legal-name">Dylan Todd</span></h1>
+              <p class="lede" id="tagline"></p>
+              <p class="prose" id="hero-subtext"></p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#book">Schedule an intro call</a>
+                <a class="btn btn-secondary" href="#contact">Send a message</a>
+              </div>
+              <p class="hero-portfolio-line" style="margin-top: 1rem; font-size: 0.9375rem">
+                <a id="hero-portfolio" href="https://dylanjtodd.github.io/site/index.html">Portfolio and research site</a>
+                <span style="color: var(--text-muted)"> · papers, ML, and side projects</span>
+              </p>
+            </div>
+            <aside class="hero-card" aria-label="What I build">
+              <p class="hero-card-title">What I build</p>
+              <ul>
+                <li>Full stack web and services across TypeScript and Python ecosystems, fitting the stack you already run</li>
+                <li>Postgres-backed data work: schemas, ETL, validation, and jobs that keep bad rows visible instead of silent</li>
+                <li>AI and ML features that sit behind a real product, with guardrails and logging an ops team can read</li>
+                <li>Recent context: EV charging and energy platforms, CFR Platform (data-heavy backend), NuNet (CRM-style front end)</li>
+              </ul>
+            </aside>
+          </div>
         </div>
       </section>
 
-      <section id="about" aria-labelledby="about-heading">
-        <p class="section-label">About</p>
-        <h2 id="about-heading">Background</h2>
-        <div class="prose">
-          <p>
-            [Paragraph 1: Your professional summary — years of experience, core strengths, and the types of
-            organizations you work with.]
-          </p>
-          <p>
-            [Paragraph 2: How you engage — e.g. fractional support, fixed-scope projects, advisory retainers,
-            or workshop facilitation. Mention jurisdictions if relevant (e.g. federal and provincial context
-            in Canada).]
-          </p>
-          <p>
-            [Paragraph 3 (optional): Personal note or values — what clients can expect when working with you.]
-          </p>
-        </div>
-      </section>
-
-      <section id="services" aria-labelledby="services-heading">
-        <p class="section-label">How I can help</p>
-        <h2 id="services-heading">Services</h2>
-        <p class="prose">
-          [Optional intro: e.g. Engagements are scoped to your timeline and risk profile — from quick
-          diligence to long-term program support.]
-        </p>
-        <div class="card-grid">
-          <article class="card">
-            <h3>[Service title — e.g. Strategy &amp; market entry]</h3>
-            <p>
-              [Short description: outcomes, typical deliverables, and who it’s for. Replace this placeholder
-              text.]
-            </p>
-          </article>
-          <article class="card">
-            <h3>[Service title — e.g. Regulatory &amp; policy navigation]</h3>
-            <p>
-              [Short description: e.g. Interpretation of programs, filings, stakeholder alignment, and
-              documentation.]
-            </p>
-          </article>
-          <article class="card">
-            <h3>[Service title — e.g. Project delivery &amp; vendor oversight]</h3>
-            <p>
-              [Short description: e.g. RFP support, implementation governance, QA of technical and commercial
-              workstreams.]
-            </p>
-          </article>
-          <article class="card">
-            <h3>[Service title — e.g. Training &amp; workshops]</h3>
-            <p>
-              [Short description: e.g. Executive briefings or team sessions on [topics you cover].]
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="expertise" aria-labelledby="expertise-heading">
-        <p class="section-label">Focus areas</p>
-        <h2 id="expertise-heading">Energy, EV charging &amp; credits</h2>
-        <p class="prose">
-          [Optional: One sentence on geographic focus — e.g. Primarily Canada (federal and provincial), with
-          select cross-border work where programs align.]
-        </p>
-        <div class="card-grid three">
-          <article class="card">
-            <h3>Energy &amp; utilities</h3>
-            <p>
-              [Placeholder: e.g. Grid planning touchpoints, tariff and rate context, utility coordination, and
-              load management considerations for charging and DER.]
-            </p>
-            <ul class="list-check">
-              <li>[Bullet — e.g. Interconnection and hosting capacity]</li>
-              <li>[Bullet — e.g. Program design review]</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>EV charging</h3>
-            <p>
-              [Placeholder: e.g. Site screening, hardware/software selection support, operations playbook,
-              and rollout sequencing for fleets or public networks.]
-            </p>
-            <ul class="list-check">
-              <li>[Bullet — e.g. NACS / OCPP considerations]</li>
-              <li>[Bullet — e.g. Revenue and utilization modeling]</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>CFR &amp; environmental credits</h3>
-            <p>
-              [Placeholder: e.g. Clean Fuel Regulations and related credit pathways — eligibility, recordkeeping,
-              and commercial structure (not legal advice; coordinate with counsel as needed).]
-            </p>
-            <ul class="list-check">
-              <li>[Bullet — e.g. Credit strategy and diligence]</li>
-              <li>[Bullet — e.g. Reporting and verification readiness]</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" aria-labelledby="contact-heading">
-        <p class="section-label">Get in touch</p>
-        <h2 id="contact-heading">Contact</h2>
-        <div class="contact-layout">
+      <section id="about" class="section-shell section-shell--paper section-shell--accent-line" aria-labelledby="about-heading">
+        <div class="section-inner">
+          <div class="section-head">
+            <p class="section-label">About</p>
+            <h2 id="about-heading">How I work</h2>
+          </div>
           <div class="prose">
             <p>
-              [Optional: Preferred first step — e.g. Send a short note with your timeline and objective, or book
-              a 20–30 minute intro directly.]
+              I am a software engineer working on full stack applications and AI/ML in production settings. Most engagements are about implementing features, tightening services that have outgrown their first design, or untangling data pipelines when reality stops matching the original diagram.
             </p>
-            <p class="contact-detail">
-              <strong>Email:</strong>
-              <a id="mailto-link" href="mailto:you@example.com">you@example.com</a>
+            <p>
+              Energy, EV charging, and credit programs are where my recent work has landed. The technical patterns are similar across them: data arrives from different vendors and older schemas, identifiers are partial, and the business still needs one coherent view it can act on. Defining the normalization layer, the incremental loads, and the operator tooling around exceptions is the part I genuinely enjoy.
             </p>
-            <p class="contact-detail" id="phone-row" hidden>
-              <strong>Phone:</strong>
-              <a id="phone-link" href="tel:"></a>
+            <p>
+              On regulated topics I work alongside the policy people and counsel who own the decisions, then encode those decisions in software that holds up under audit. Communication is a strength: short written updates, clear questions when something is ambiguous, and code that reads like the system it is supposed to be.
             </p>
-            <p id="footer-other-wrap" style="margin-top: 1rem">
-              <a id="footer-other" href="#" style="display: none">Profile</a>
+            <p>
+              Engagements are usually remote and shaped to fit: a defined slice over four to twelve weeks, a focused tightening pass on an existing service, or a part-time retainer when steady commits matter more than a single push. You work with me directly.
             </p>
           </div>
-          <form id="contact-form" class="contact-form" novalidate>
-            <div class="form-row">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required />
-            </div>
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required />
-            </div>
-            <div class="form-row">
-              <label for="company">Company / organization</label>
-              <input id="company" name="company" type="text" autocomplete="organization" />
-            </div>
-            <div class="form-row">
-              <label for="topic">Topic</label>
-              <select id="topic" name="topic">
-                <option value="General inquiry">General inquiry</option>
-                <option value="EV charging">EV charging</option>
-                <option value="Energy / utilities">Energy / utilities</option>
-                <option value="CFR / credits">CFR / credits</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" required placeholder="How can I help?"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.25rem">
-              Send message
-            </button>
-            <p class="form-hint">
-              This form uses
-              <a href="https://formspree.io" rel="noopener noreferrer">Formspree</a>. Add your form endpoint in
-              <code>site-config.js</code>.
-            </p>
-            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
-          </form>
         </div>
       </section>
 
-      <section id="book" aria-labelledby="book-heading">
-        <p class="section-label">Intro call</p>
-        <h2 id="book-heading">Book a time</h2>
-        <p class="prose">
-          [Optional: e.g. Choose a slot for a brief intro. If you don’t see a time that works, email me and we’ll
-          find an alternative.]
-        </p>
-        <p style="margin-top: 1rem">
-          <a id="booking-cta" class="btn btn-primary" href="#" hidden>Open scheduling page</a>
-        </p>
-        <div id="booking-embed" class="booking-panel" style="margin-top: 1.25rem"></div>
-        <div id="booking-fallback" class="booking-fallback" hidden>
-          <p>
-            Add your Calendly or Cal.com link in <code>site-config.js</code> (<code>bookingEmbedUrl</code> and
-            <code>bookingProvider</code>).
+      <section class="section-shell section-shell--deep" aria-labelledby="mid-cta-heading">
+        <div class="section-inner">
+          <div class="section-head section-head--row">
+            <div>
+              <p class="section-label">Get in touch</p>
+              <h2 id="mid-cta-heading" style="margin-bottom: 0.35rem">Talk through your project</h2>
+              <p class="prose" style="margin: 0">Pick a time that works, or send a note first if that is easier.</p>
+            </div>
+            <div class="hero-actions" style="margin: 0">
+              <a class="btn btn-primary" href="#book">Open calendar</a>
+              <a class="btn btn-secondary" href="#contact">Send a message</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section-shell section-shell--muted" aria-labelledby="services-heading">
+        <div class="section-inner">
+          <div class="section-head">
+            <p class="section-label">Services</p>
+            <h2 id="services-heading">What you can hire me for</h2>
+          </div>
+          <p class="prose">
+            Each engagement ends in working software your team can run, with a written scope and clear acceptance checks agreed up front.
           </p>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Technical discovery and scope</h3>
+              <p>
+                Walk through the codebase, map services and data flows, and surface the gaps that matter (tests, observability, schema drift). The output is a short written plan with sliced backlog, risks, and what I need from your domain owners.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Feature build and integration</h3>
+              <p>
+                User-facing flows, backing APIs, third-party integrations, migrations with rollback paths, and integration tests on the paths that touch money or regulated fields.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Data pipelines and cleanup</h3>
+              <p>
+                Ingestion for messy feeds, with validation rules, dead-letter queues, reconciliation reports, and operator screens that turn exceptions into something a person can act on.
+              </p>
+            </article>
+            <article class="card">
+              <h3>AI and ML inside the product</h3>
+              <p>
+                LLM and classical ML features wired behind the auth model: prompts, tool contracts, evaluation hooks, rate limits, and human-in-the-loop review when outputs carry weight.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="expertise" class="section-shell section-shell--paper" aria-labelledby="expertise-heading">
+        <div class="section-inner">
+          <div class="section-head">
+            <p class="section-label">Expertise</p>
+            <h2 id="expertise-heading">Technical strengths and sector context</h2>
+          </div>
+          <p class="prose">
+            Based in Eastern Canada, working remotely with teams in compatible time zones. Strengths cluster around four areas, with the energy and credits work being the most recent context.
+          </p>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Production software and data</h3>
+              <p>
+                Features that touch PostgreSQL (and friends), batch and incremental jobs, API contracts, and deployment hygiene. At CFR Platform the work skewed database and pipeline heavy; at NuNet it leaned toward CRM-style TypeScript front ends talking to live services.
+              </p>
+              <ul class="list-check">
+                <li>Migrations with rollback and CI checks on schema changes</li>
+                <li>ETL that tolerates bad vendor rows and surfaces them for humans</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>AI and ML engineering</h3>
+              <p>
+                Model-backed behavior inside a real product: inference paths, prompt templates in code, structured outputs, evaluation datasets, and kill switches when confidence drops. Grounded in prior research on ML and identity-oriented AI.
+              </p>
+              <ul class="list-check">
+                <li>Features that survive bad inputs and unusual edge cases</li>
+                <li>Operational metrics engineers can actually alert on</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Energy and mobility platforms</h3>
+              <p>
+                EV charging and DER-shaped workloads treated as engineering problems: telemetry and billing feeds from many sources normalized into one service layer your product can rely on.
+              </p>
+              <ul class="list-check">
+                <li>Tariff and metering models implemented faithfully</li>
+                <li>Site, fleet, and session data reconciled across vendors</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Credits and compliance-shaped software</h3>
+              <p>
+                Workflows and data stores that match what your policy owners and counsel decide. When rules shift, code and tests move with them.
+              </p>
+              <ul class="list-check">
+                <li>Audit-friendly logs and evidence chains in the database</li>
+                <li>Exports and reconciliation jobs a compliance lead can verify</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section-shell section-shell--muted" aria-labelledby="testimonials-heading">
+        <div class="section-inner">
+          <div class="section-head">
+            <p class="section-label">Clients</p>
+            <h2 id="testimonials-heading">What people say</h2>
+          </div>
+          <p class="prose">
+            From recent projects with CFR Platform and NuNet through Riipen Level UP cohorts. Project specifics stay under NDA; names and roles are quoted as written.
+          </p>
+          <div class="testimonial-grid">
+            <blockquote class="testimonial-card">
+              <p class="testimonial-quote">
+                Dylan combines deep technical skill with plain communication. Our brief was loose and our team needed direction. He tightened scope quickly, kept collaboration on track across contributors, and delivered documentation we could run with after handoff. We would work with him again.
+              </p>
+              <cite>
+                <strong>Luc Lendrum</strong>
+                Director of Operations, CFR Platform
+              </cite>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <p class="testimonial-quote">
+                Dylan showed up motivated and productive end to end. Clear ownership, quick cycles, and solid judgment on automation and workflow changes.
+              </p>
+              <cite>
+                <strong>Luca Mazzo</strong>
+                President, NuNet
+              </cite>
+            </blockquote>
+            <blockquote class="testimonial-card testimonial-card--wide">
+              <p class="testimonial-quote haiku">
+                Postgres masterclass,
+                YAML files in perfect sync,
+                Dylan steals the show.
+              </p>
+              <cite>
+                <strong>Luc Lendrum</strong>
+                Director of Operations, CFR Platform
+              </cite>
+              <p class="testimonial-note">
+                Separate endorsement from the same author, kept verbatim because the haiku was intentional.
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-shell section-shell--paper section-shell--accent-line" aria-labelledby="contact-heading">
+        <div class="section-inner">
+          <div class="section-head">
+            <p class="section-label">Contact</p>
+            <h2 id="contact-heading">Send a message</h2>
+          </div>
+          <div class="contact-layout">
+            <div class="prose">
+              <p>
+                A few sentences is enough to get a useful reply: the stack you run, where the data lives, what is slow or broken today, and whether you want a scope conversation first or hands-on time straight away. Replies usually go out within a few business days.
+              </p>
+              <p id="contact-portfolio-block">
+                <a id="contact-portfolio" href="https://dylanjtodd.github.io/site/index.html">Portfolio and research site</a>
+                <span style="color: var(--text-muted)"> (papers, projects, code-adjacent work)</span>
+              </p>
+              <p class="contact-detail">
+                <strong>Email:</strong>
+                <a id="mailto-link" href="mailto:dylan.todd04@gmail.com">dylan.todd04@gmail.com</a>
+              </p>
+              <p class="contact-detail" id="phone-row" hidden>
+                <strong>Phone:</strong>
+                <a id="phone-link" href="tel:"></a>
+              </p>
+              <p id="footer-other-wrap" style="margin-top: 1rem">
+                <a id="footer-other" href="#" style="display: none">Profile</a>
+              </p>
+            </div>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="form-row">
+                <label for="company">Company / organization</label>
+                <input id="company" name="company" type="text" autocomplete="organization" />
+              </div>
+              <div class="form-row">
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                  <option value="General inquiry">General inquiry</option>
+                  <option value="Full stack / data systems">Full stack / data systems</option>
+                  <option value="AI integration">AI integration</option>
+                  <option value="EV charging">EV charging</option>
+                  <option value="Energy / utilities">Energy / utilities</option>
+                  <option value="Credits / compliance software">Credits / compliance software</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Example: Node API on Postgres, intake CSVs from three vendors with conflicting IDs, need validation layer + dashboard for rejected rows; ship MVP in 8 weeks."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.25rem">
+                Send message
+              </button>
+              <p class="form-hint">Delivered through Formspree. Your endpoint lives in <code>site-config.js</code>.</p>
+              <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="book" class="section-shell section-shell--warm" aria-labelledby="book-heading">
+        <div class="section-inner">
+          <div class="section-head">
+            <p class="section-label">Calendar</p>
+            <h2 id="book-heading">Book a time</h2>
+          </div>
+          <p class="prose">
+            Pick a time that suits you. If nothing on the calendar lines up, send a note with a couple of windows that do.
+          </p>
+          <p style="margin-top: 1rem">
+            <a id="booking-cta" class="btn btn-primary" href="#" hidden>Open scheduling page</a>
+          </p>
+          <div id="booking-embed" class="booking-panel" style="margin-top: 1.25rem"></div>
+          <div id="booking-fallback" class="booking-fallback" hidden>
+            <p>
+              Add your Calendly or Cal.com link in <code>site-config.js</code> (<code>bookingEmbedUrl</code> and <code>bookingProvider</code>).
+            </p>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer site-footer--inverse">
       <div class="footer-inner">
         <p>© <span id="footer-year"></span> <span id="footer-legal">Dylan Todd</span>. All rights reserved.</p>
         <div class="footer-links">
+          <a id="footer-portfolio" href="https://dylanjtodd.github.io/site/index.html">Portfolio</a>
           <a id="footer-linkedin" href="#" style="display: none">LinkedIn</a>
+          <a href="#book">Book a call</a>
           <a href="#contact">Contact</a>
         </div>
       </div>

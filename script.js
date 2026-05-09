@@ -18,10 +18,19 @@
     if (el && !condition) el.style.display = "none";
   }
 
+  function formatNorthAmericanPhone(raw) {
+    var d = String(raw).replace(/\D/g, "");
+    if (d.length === 10) {
+      return "(" + d.slice(0, 3) + ") " + d.slice(3, 6) + "-" + d.slice(6);
+    }
+    return raw;
+  }
+
   function initBranding() {
     text("legal-name", cfg.legalName || "");
     text("trading-name", cfg.tradingName || "");
-    document.title = (cfg.tradingName || cfg.legalName || "Consulting") + " — " + (cfg.legalName || "");
+    document.title =
+      (cfg.tradingName || cfg.legalName || "Consulting") + " | " + (cfg.legalName || "");
     text("tagline", cfg.tagline || "");
     text("hero-subtext", cfg.heroSubtext || "");
     text("footer-legal", cfg.legalName || "");
@@ -43,7 +52,7 @@
     if (phoneEl && phone) {
       const digits = phone.replace(/\D/g, "");
       phoneEl.href = digits ? "tel:" + digits : "#";
-      phoneEl.textContent = phone;
+      phoneEl.textContent = formatNorthAmericanPhone(phone);
       phoneRow?.removeAttribute("hidden");
     }
 
@@ -52,6 +61,42 @@
     hideIfEmpty("nav-linkedin", li);
     setHref("footer-linkedin", li);
     hideIfEmpty("footer-linkedin", li);
+
+    const pf = cfg.portfolioUrl;
+    const pfLabel = cfg.portfolioLabel || "Portfolio";
+    const navPf = document.getElementById("nav-portfolio");
+    const footPf = document.getElementById("footer-portfolio");
+    const heroPf = document.getElementById("hero-portfolio");
+    const contactPf = document.getElementById("contact-portfolio");
+    if (pf) {
+      if (navPf) {
+        navPf.href = pf;
+        navPf.textContent = pfLabel;
+        navPf.style.display = "";
+      }
+      if (footPf) {
+        footPf.href = pf;
+        footPf.textContent = pfLabel;
+        footPf.style.display = "";
+      }
+      if (heroPf) {
+        heroPf.href = pf;
+      }
+      if (contactPf) {
+        contactPf.href = pf;
+      }
+      var heroPlOn = document.querySelector(".hero-portfolio-line");
+      if (heroPlOn) heroPlOn.hidden = false;
+      var cpbOn = document.getElementById("contact-portfolio-block");
+      if (cpbOn) cpbOn.hidden = false;
+    } else {
+      if (navPf) navPf.style.display = "none";
+      if (footPf) footPf.style.display = "none";
+      var heroPlOff = document.querySelector(".hero-portfolio-line");
+      if (heroPlOff) heroPlOff.hidden = true;
+      var cpbOff = document.getElementById("contact-portfolio-block");
+      if (cpbOff) cpbOff.hidden = true;
+    }
 
     const other = cfg.otherProfileUrl;
     const otherLabel = cfg.otherProfileLabel || "Link";
@@ -150,7 +195,7 @@
       e.preventDefault();
       if (status) {
         status.className = "form-status visible";
-        status.textContent = "Sending…";
+        status.textContent = "Sending...";
       }
 
       const data = new FormData(form);
@@ -163,7 +208,7 @@
         if (res.ok) {
           if (status) {
             status.className = "form-status visible success";
-            status.textContent = "Thanks — your message was sent. I’ll reply shortly.";
+            status.textContent = "Thanks. Your message was sent. I will reply shortly.";
           }
           form.reset();
         } else {
