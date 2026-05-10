@@ -555,6 +555,44 @@ h2 {
   }
 }
 
+.about-layout {
+  display: grid;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  align-items: start;
+}
+
+@media (min-width: 760px) {
+  .about-layout {
+    grid-template-columns: minmax(0, 16rem) 1fr;
+    gap: 2.75rem;
+  }
+}
+
+.portrait {
+  margin: 0;
+  max-width: 18rem;
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 5;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+}
+
+.portrait figcaption {
+  margin-top: 0.65rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
 .contact-form {
   background: var(--surface);
   border: 1px solid var(--border);
