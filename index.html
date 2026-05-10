@@ -2,6 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <script>
+      (function () {
+        if (!/^https?:$/i.test(location.protocol)) return;
+        var path = location.pathname;
+        var baseDir;
+        if (path === "/" || path === "") {
+          baseDir = "/";
+        } else if (path.endsWith("/")) {
+          baseDir = path;
+        } else if (/index\.html$/i.test(path)) {
+          baseDir = path.replace(/index\.html$/i, "");
+        } else {
+          baseDir = path + "/";
+        }
+        var b = document.createElement("base");
+        b.href = baseDir;
+        var charset = document.querySelector("meta[charset]");
+        if (charset && charset.parentNode === document.head) {
+          charset.insertAdjacentElement("afterend", b);
+        } else {
+          document.head.insertBefore(b, document.head.firstChild);
+        }
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
