@@ -15,7 +15,7 @@
           baseDir = path.replace(/index\.html$/i, "");
         } else {
           baseDir = path + "/";
-        }
+        } 
         var b = document.createElement("base");
         b.href = baseDir;
         var charset = document.querySelector("meta[charset]");
@@ -346,7 +346,6 @@
               <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.25rem">
                 Send message
               </button>
-              <p class="form-hint">Delivered through Formspree. Your endpoint lives in <code>site-config.js</code>.</p>
               <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
             </form>
           </div>
