@@ -6,9 +6,6 @@ window.SITE_CONFIG = {
   heroSubtext:
     "I build the moving parts: APIs, databases, ETL, and AI features that live behind a UI people actually use. Energy data tends to arrive heterogeneous and half-tidy; getting it into one trustworthy shape is the work I enjoy most.",
 
-  email: "dylan.todd04@gmail.com",
-  phone: "7056775572",
-
   linkedinUrl: "https://www.linkedin.com/in/dylan-j-todd/",
   portfolioUrl: "https://dylanjtodd.github.io/site/index.html",
   portfolioLabel: "Portfolio",

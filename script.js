@@ -38,11 +38,14 @@
     const email = cfg.email || "";
     const mailEl = document.getElementById("mailto-link");
     if (mailEl) {
+      const mailParent = mailEl.closest('.contact-detail') || mailEl.parentElement;
       if (email) {
         mailEl.href = "mailto:" + email;
         mailEl.textContent = email;
+        if (mailParent) mailParent.style.display = "";
       } else {
         mailEl.style.display = "none";
+        if (mailParent) mailParent.style.display = "none";
       }
     }
 
